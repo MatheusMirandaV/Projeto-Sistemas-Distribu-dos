@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "zeromq": "^6.4.2"
+  }
+}

@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  java-server:
+    build: ./java-server
+    container_name: java-server
+    ports:
+      - "5551:5551"
+      - "5561:5561"
+      - "5571:5571"
+      - "5581:5581"
+
+  python-server:
+    build: ./python-server
+    container_name: python-server
+    ports:
+      - "5552:5552"
+      - "5562:5562"
+      - "5572:5572"
+      - "5582:5582"
+
+  node-server:
+    build: ./node-server
+    container_name: node-server
+    ports:
+      - "5553:5553"
+      - "5563:5563"
+      - "5573:5573"
+      - "5583:5583"
